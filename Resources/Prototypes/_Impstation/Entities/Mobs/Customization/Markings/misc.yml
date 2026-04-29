@@ -12,75 +12,75 @@
 #    state: filename
 #  shaded: unshaded //use for markings that ignore shader
 
-- type: marking
-  id: Gills
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenchestgills
-
-- type: marking
-  id: ThavenChestScales
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenchestscales
-
-- type: marking
-  id: ThavenHeadScales
-  bodyPart: Head
-  markingCategory: HeadTop
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenheadscales
-
-- type: marking
-  id: ThavenLArmScales
-  bodyPart: LArm
-  markingCategory: Arms
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenleftarmscales
-
-- type: marking
-  id: ThavenRArmScales
-  bodyPart: RArm
-  markingCategory: Arms
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenrightarmscales
-
-- type: marking
-  id: ThavenLLegScales
-  bodyPart: LLeg
-  markingCategory: Legs
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenleftlegscales
-
-- type: marking
-  id: ThavenRLegScales
-  bodyPart: RLeg
-  markingCategory: Legs
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenrightlegscales
+#- type: marking
+#  id: Gills
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenchestgills
+#
+#- type: marking
+#  id: ThavenChestScales
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenchestscales
+#
+#- type: marking
+#  id: ThavenHeadScales
+#  bodyPart: Head
+#  markingCategory: HeadTop
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenheadscales
+#
+#- type: marking
+#  id: ThavenLArmScales
+#  bodyPart: LArm
+#  markingCategory: Arms
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenleftarmscales
+#
+#- type: marking
+#  id: ThavenRArmScales
+#  bodyPart: RArm
+#  markingCategory: Arms
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenrightarmscales
+#
+#- type: marking
+#  id: ThavenLLegScales
+#  bodyPart: LLeg
+#  markingCategory: Legs
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenleftlegscales
+#
+#- type: marking
+#  id: ThavenRLegScales
+#  bodyPart: RLeg
+#  markingCategory: Legs
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenrightlegscales
 
 #- type: marking
 #  id: ThavenLHandScales
@@ -114,151 +114,151 @@
 #commented out until i find a way to hide them under clothes
 
 
-- type: marking
-  id: ThavenTopSurgery
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: true
-  followSkinColor: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavennonaturals
+#- type: marking
+#  id: ThavenTopSurgery
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: true
+#  followSkinColor: true
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavennonaturals
 
-- type: marking
-  id: ThavenFishEars
-  bodyPart: HeadSide
-  markingCategory: Headside
-  forcedColoring: true
-  followSkinColor: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenfishears
-
-- type: marking
-  id: ThavenTattooVines
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventattoovines
-
-- type: marking
-  id: ThavenSpines
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenspines
-
-- type: marking
-  id: ThavenBiteMark
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenbitemark
-
-- type: marking
-  id: ThavenTattooWave
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventattoowave
-
-- type: marking
-  id: SharkminnowEyeliner
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventattoosharkminnoweyeliner
-
-- type: marking
-  id: ThavenTiger
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventiger1
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventiger2
-
-- type: marking
-  id: ThavenTigerRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventigerarmsr
-
-- type: marking
-  id: ThavenTigerLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thaventigerarmsl
-
-- type: marking
-  id: ThavenHeadStripes
-  bodyPart: Head
-  markingCategory: Head
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenheadstripes
-
-- type: marking
-  id: ThavenBodyStripes
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenbodystripes
-
-- type: marking
-  id: ThavenEarsBigFins
-  bodyPart: HeadSide
-  markingCategory: HeadSide
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenearsbigfins
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenearsbigfins2
-
-- type: marking
-  id: ThavenHeadCap
-  bodyPart: Head
-  markingCategory: Head
-  forcedColoring: false
-  followSkinColor: false
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenheadcap1
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: thavenheadcap2
+#- type: marking
+#  id: ThavenFishEars
+#  bodyPart: HeadSide
+#  markingCategory: Headside
+#  forcedColoring: true
+#  followSkinColor: true
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenfishears
+#
+#- type: marking
+#  id: ThavenTattooVines
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventattoovines
+#
+#- type: marking
+#  id: ThavenSpines
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenspines
+#
+#- type: marking
+#  id: ThavenBiteMark
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenbitemark
+#
+#- type: marking
+#  id: ThavenTattooWave
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventattoowave
+#
+#- type: marking
+#  id: SharkminnowEyeliner
+#  bodyPart: HeadTop
+#  markingCategory: HeadTop
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventattoosharkminnoweyeliner
+#
+#- type: marking
+#  id: ThavenTiger
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventiger1
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventiger2
+#
+#- type: marking
+#  id: ThavenTigerRArm
+#  bodyPart: RArm
+#  markingCategory: Arms
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventigerarmsr
+#
+#- type: marking
+#  id: ThavenTigerLArm
+#  bodyPart: LArm
+#  markingCategory: Arms
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thaventigerarmsl
+#
+#- type: marking
+#  id: ThavenHeadStripes
+#  bodyPart: Head
+#  markingCategory: Head
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenheadstripes
+#
+#- type: marking
+#  id: ThavenBodyStripes
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenbodystripes
+#
+#- type: marking
+#  id: ThavenEarsBigFins
+#  bodyPart: HeadSide
+#  markingCategory: HeadSide
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenearsbigfins
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenearsbigfins2
+#
+#- type: marking
+#  id: ThavenHeadCap
+#  bodyPart: Head
+#  markingCategory: Head
+#  forcedColoring: false
+#  followSkinColor: false
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenheadcap1
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: thavenheadcap2
 
 - type: marking
   id: DionaLivingNymph
@@ -852,159 +852,159 @@
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbelly
 
-- type: marking
-  id: VitiligoHeadL
-  bodyPart: Head
-  markingCategory: Head
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligoheadl
-
-- type: marking
-  id: VitiligoHeadR
-  bodyPart: Head
-  markingCategory: Head
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligoheadr
-
-- type: marking
-  id: VitiligoHeadJaw
-  bodyPart: Head
-  markingCategory: Head
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligoheadjaw
-
-- type: marking
-  id: VitiligoChestF
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligochestf
-
-- type: marking
-  id: VitiligoChestSpots
-  bodyPart: Chest
-  markingCategory: Chest
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligochestspots
-
-- type: marking
-  id: VitiligoArmR
-  bodyPart: RArm
-  markingCategory: Arms
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligoarmr
-
-- type: marking
-  id: VitiligoArmL
-  bodyPart: LArm
-  markingCategory: Arms
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligoarml
-
-- type: marking
-  id: VitiligoHandR
-  bodyPart: RHand
-  markingCategory: Arms
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligohandr
-
-- type: marking
-  id: VitiligoHandL
-  bodyPart: LHand
-  markingCategory: Arms
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligohandl
-
-- type: marking
-  id: VitiligoLegR
-  bodyPart: RLeg
-  markingCategory: Legs
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligolegr
-
-- type: marking
-  id: VitiligoLegL
-  bodyPart: LLeg
-  markingCategory: Legs
-  forcedColoring: true
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#FFE5D6"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
-    state: vitiligolegl
+#- type: marking
+#  id: VitiligoHeadL
+#  bodyPart: Head
+#  markingCategory: Head
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligoheadl
+#
+#- type: marking
+#  id: VitiligoHeadR
+#  bodyPart: Head
+#  markingCategory: Head
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligoheadr
+#
+#- type: marking
+#  id: VitiligoHeadJaw
+#  bodyPart: Head
+#  markingCategory: Head
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligoheadjaw
+#
+#- type: marking
+#  id: VitiligoChestF
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligochestf
+#
+#- type: marking
+#  id: VitiligoChestSpots
+#  bodyPart: Chest
+#  markingCategory: Chest
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligochestspots
+#
+#- type: marking
+#  id: VitiligoArmR
+#  bodyPart: RArm
+#  markingCategory: Arms
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligoarmr
+#
+#- type: marking
+#  id: VitiligoArmL
+#  bodyPart: LArm
+#  markingCategory: Arms
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligoarml
+#
+#- type: marking
+#  id: VitiligoHandR
+#  bodyPart: RHand
+#  markingCategory: Arms
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligohandr
+#
+#- type: marking
+#  id: VitiligoHandL
+#  bodyPart: LHand
+#  markingCategory: Arms
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligohandl
+#
+#- type: marking
+#  id: VitiligoLegR
+#  bodyPart: RLeg
+#  markingCategory: Legs
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligolegr
+#
+#- type: marking
+#  id: VitiligoLegL
+#  bodyPart: LLeg
+#  markingCategory: Legs
+#  forcedColoring: true
+#  coloring:
+#    default:
+#      type:
+#        !type:SimpleColoring
+#        color: "#FFE5D6"
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
+#    state: vitiligolegl
 
 - type: marking
   id: ChitinidBeetleHorn1
