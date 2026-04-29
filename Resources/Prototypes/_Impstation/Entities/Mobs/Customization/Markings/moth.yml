@@ -274,7 +274,7 @@
 - type: marking
   id: HandChimeraLeftMoth
   bodyPart: LHand
-  markingCategory: LHand
+  markingCategory: Hands # Triad
   speciesRestriction: [Moth]
   followSkinColor: false
   coloring:
@@ -289,7 +289,7 @@
 - type: marking
   id: HandProstheticLeftMoth
   bodyPart: LHand
-  markingCategory: LHand
+  markingCategory: Hands # Triad
   speciesRestriction: [Moth]
   followSkinColor: false
   coloring:
@@ -304,7 +304,7 @@
 - type: marking
   id: HandTwistingLeftMoth
   bodyPart: LHand
-  markingCategory: LHand
+  markingCategory: Hands # Triad
   speciesRestriction: [Moth]
   followSkinColor: false
   sprites:
@@ -314,7 +314,7 @@
 - type: marking
   id: HandProstheticRightMoth
   bodyPart: RHand
-  markingCategory: RHand
+  markingCategory: Hands # Triad
   speciesRestriction: [Moth]
   followSkinColor: false
   coloring:
