@@ -1,7 +1,9 @@
+## WHOLE FILE CHANGE BY TRIAD
+
 # Chest
 
 - type: marking
-  id: bubble
+  id: bubble2
   bodyPart: Chest
   markingCategory: Chest
   sprites:
@@ -9,7 +11,7 @@
     state: bubble
 
 - type: marking
-  id: fishbowl
+  id: fishbowl2
   bodyPart: Chest
   markingCategory: Chest
   sprites:
@@ -19,7 +21,7 @@
     state: fishbowl2
 
 - type: marking
-  id: SlimeBonechest
+  id: SlimeBonechest2
   bodyPart: Chest
   markingCategory: Chest
   coloring:
@@ -32,7 +34,7 @@
     state: bone
 
 - type: marking
-  id: SlimeCore
+  id: SlimeCore2
   bodyPart: Chest
   markingCategory: Chest
   followSkinColor: false
@@ -45,7 +47,7 @@
     state: core
 
 - type: marking
-  id: SlimeLungs
+  id: SlimeLungs2
   bodyPart: Chest
   markingCategory: Chest
   followSkinColor: true
@@ -56,7 +58,7 @@
 # Head
 
 - type: marking
-  id: FadingStars
+  id: FadingStars2
   bodyPart: Head
   markingCategory: Head
   sprites:
@@ -68,7 +70,7 @@
     state: fadingstars3
 
 - type: marking
-  id: fizz
+  id: fizz2
   bodyPart: Head
   markingCategory: Head
   sprites:
@@ -76,7 +78,7 @@
     state: fizz
 
 - type: marking
-  id: SlimeBonehead
+  id: SlimeBonehead2
   bodyPart: Head
   markingCategory: Head
   coloring:
@@ -89,7 +91,7 @@
     state: bone
 
 - type: marking
-  id: SlimeBrain
+  id: SlimeBrain2
   bodyPart: Head
   markingCategory: Head
   followSkinColor: true
@@ -104,7 +106,7 @@
 # RArm
 
 - type: marking
-  id: SlimeBonearmright
+  id: SlimeBonearmright2
   bodyPart: RArm
   markingCategory: Arms
   coloring:
@@ -134,7 +136,7 @@
 # RLeg
 
 - type: marking
-  id: SlimeBonelegright
+  id: SlimeBonelegright2
   bodyPart: RLeg
   markingCategory: Legs
   coloring:
@@ -149,7 +151,7 @@
 # LLeg
 
 - type: marking
-  id: SlimeBonelegleft
+  id: SlimeBonelegleft2
   bodyPart: LLeg
   markingCategory: Legs
   coloring:
@@ -168,7 +170,7 @@
 # LFoot
 
 - type: marking
-  id: SlimeBonefootleft
+  id: SlimeBonefootleft2
   bodyPart: LFoot
   markingCategory: Legs
   coloring:
@@ -183,7 +185,7 @@
 # RFoot
 
 - type: marking
-  id: SlimeBonefootright
+  id: SlimeBonefootright2
   bodyPart: RFoot
   markingCategory: Legs
   coloring:
@@ -198,7 +200,7 @@
 # LHand
 
 - type: marking
-  id: SlimeBonehandleft
+  id: SlimeBonehandleft2
   bodyPart: LHand
   markingCategory: Arms
   coloring:
@@ -213,7 +215,7 @@
 # RHand
 
 - type: marking
-  id: SlimeBonehandright
+  id: SlimeBonehandright2
   bodyPart: RHand
   markingCategory: Arms
   coloring:
