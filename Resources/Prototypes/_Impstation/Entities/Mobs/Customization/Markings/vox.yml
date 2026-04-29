@@ -1,7 +1,7 @@
 - type: marking
   id: FeatheredLegL
   bodyPart: LLeg
-  markingCategory: LLeg
+  markingCategory: Legs #Triad
   speciesRestriction: [ Vox ]
   followSkinColor: false
   sprites:
@@ -11,7 +11,7 @@
 - type: marking
   id: FeatheredLegR
   bodyPart: RLeg
-  markingCategory: RLeg
+  markingCategory: Legs #Triad
   speciesRestriction: [ Vox ]
   followSkinColor: false
   sprites:
@@ -21,7 +21,7 @@
 - type: marking
   id: SpotsArmL
   bodyPart: LArm
-  markingCategory: LArm
+  markingCategory: Arms #Triad
   speciesRestriction: [ Vox ]
   followSkinColor: false
   sprites:
@@ -31,7 +31,7 @@
 - type: marking
   id: SpotsArmR
   bodyPart: RArm
-  markingCategory: RArm
+  markingCategory: Arms #Triad
   speciesRestriction: [ Vox ]
   followSkinColor: false
   sprites:

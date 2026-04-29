@@ -6,7 +6,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
     state: drawing_khar
-
+#
 - type: marking
   id: ReptilianDrawingSkeletBody
   bodyPart: Chest
@@ -211,7 +211,7 @@
 - type: marking
   id: ReptilianTattoSkeletArmL
   bodyPart: LArm
-  markingCategory: LArm
+  markingCategory: Arms #Triad
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -220,7 +220,7 @@
 - type: marking
   id: ReptilianTattoSkeletArmR
   bodyPart: RArm
-  markingCategory: RArm
+  markingCategory: Arms #Triad
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -229,7 +229,7 @@
 - type: marking
   id: ReptilianTattoSkeletLegL
   bodyPart: LLeg
-  markingCategory: LLeg
+  markingCategory: Legs #Triad
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -238,7 +238,7 @@
 - type: marking
   id: ReptilianTattoSkeletLegR
   bodyPart: RLeg
-  markingCategory: RLeg
+  markingCategory: Legs #Triad
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
