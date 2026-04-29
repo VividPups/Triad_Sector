@@ -7,16 +7,40 @@
       "y": 32
     },
     "states": [
-      {
+	  {
         "name": "arm_l_prosthetic",
         "directions": 4
       },
-      {
-          "name": "arm_l_twisting",
+	  {
+          "name": "arm_r_prosthetic",
+          "directions": 4
+      },
+	  {
+          "name": "foot_l_prosthetic",
+          "directions": 4
+      },
+	  {
+          "name": "foot_r_prosthetic",
+          "directions": 4
+      },
+	  {
+          "name": "hand_l_prosthetic",
+          "directions": 4
+      },
+	  {
+          "name": "hand_r_prosthetic",
+          "directions": 4
+      },
+	  {
+          "name": "leg_l_prosthetic",
+          "directions": 4
+      },
+	  {
+          "name": "leg_r_prosthetic",
           "directions": 4
       },
       {
-          "name": "arm_r_prosthetic",
+          "name": "arm_l_twisting",
           "directions": 4
       },
       {
@@ -40,23 +64,7 @@
           "directions": 4
       },
       {
-          "name": "foot_l_prosthetic",
-          "directions": 4
-      },
-      {
-          "name": "foot_r_prosthetic",
-          "directions": 4
-      },
-      {
-          "name": "hand_l_prosthetic",
-          "directions": 4
-      },
-      {
           "name": "hand_l_twisting",
-          "directions": 4
-      },
-      {
-          "name": "hand_r_prosthetic",
           "directions": 4
       },
       {
@@ -72,15 +80,11 @@
           "directions": 4
       },
       {
-          "name": "leg_l_prosthetic",
+          "name": "head_twisting_flipped",
           "directions": 4
       },
       {
           "name": "leg_l_twisting",
-          "directions": 4
-      },
-      {
-          "name": "leg_r_prosthetic",
           "directions": 4
       },
       {
