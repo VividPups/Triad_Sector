@@ -20,7 +20,8 @@
   id: HumanTattooChurchdomes
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Felinid, Arachne, Moth, Vulpkanin]  sprites:
+  speciesRestriction: [Human, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Felinid, Arachne, Moth, Vulpkanin]
+  sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: tattoo_churchdomes
 
