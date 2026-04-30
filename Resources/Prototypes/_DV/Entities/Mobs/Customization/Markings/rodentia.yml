@@ -31,6 +31,7 @@
 - type: marking
   id: RodentiaHeadTopEarBat
   markingCategory: HeadTop
+
   bodyPart: HeadTop
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
