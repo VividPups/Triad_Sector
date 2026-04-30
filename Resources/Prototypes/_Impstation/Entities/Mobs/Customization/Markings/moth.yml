@@ -289,7 +289,7 @@
 - type: marking
   id: HandProstheticLeftMoth
   bodyPart: LHand
-  markingCategory: Hands # Triad
+  markingCategory: Hand # Triad
   speciesRestriction: [Moth]
   followSkinColor: false
   coloring:
