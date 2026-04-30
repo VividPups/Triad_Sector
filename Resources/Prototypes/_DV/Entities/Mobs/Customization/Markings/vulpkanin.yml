@@ -243,18 +243,19 @@
     - sprite: _DV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: slash
 
-# Tail Markings
-# Floofstation - moved to the _Floof namespace
-#- type: marking
-#  id: VulpTail
-#  bodyPart: Tail
-#  markingCategory: Tail
-#  sprites:
-#    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
-#      state: vulp
-#    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
-#      state: vulp-fade
-#
+ #Tail Markings
+ #Floofstation - moved to the _Floof namespace
+
+- type: marking
+  id: VulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  sprites:
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+      state: vulp
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+      state: vulp-fade
+
 #- type: marking
 #  id: VulpTailTip
 #  bodyPart: Tail

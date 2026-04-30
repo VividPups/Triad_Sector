@@ -50,16 +50,16 @@
       points: 3
       required: false
     Legs:
-      points: 1
+      points: 3 # Triad
       required: false
     Arms:
-      points: 1
+      points: 3 # Triad
       required: false
     Snout:
       points: 1
       required: false
     HeadTop:
-      points: 1
+      points: 2 # Triad
       required: true
       defaultMarkings: [ VulpEar ]
 

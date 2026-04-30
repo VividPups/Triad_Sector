@@ -121,7 +121,7 @@
 # LArm
 
 - type: marking
-  id: SlimeBonearmleft
+  id: SlimeBonearmleft2
   bodyPart: LArm
   markingCategory: Arms
   coloring:
