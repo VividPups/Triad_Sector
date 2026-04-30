@@ -271,20 +271,20 @@
   - sprite: _Impstation/Mobs/Customization/moth.rsi
     state: foot_r_prosthetic_moth
 
-- type: marking
-  id: HandChimeraLeftMoth
-  bodyPart: LHand
-  markingCategory: Hands # Triad
-  speciesRestriction: [Moth]
-  followSkinColor: false
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
-          negative: true
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/moth.rsi
-    state: hand_l_chimera_moth
+#- type: marking  # For some reason it wont work so I disable it
+#  id: HandChimeraLeftMoth
+#  bodyPart: LHand
+#  markingCategory: Hands # Triad
+#  speciesRestriction: [Moth]
+#  followSkinColor: false
+#  coloring:
+#    default:
+#      type:
+#        !type:SkinColoring
+#          negative: true
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/moth.rsi
+#    state: hand_l_chimera_moth
 
 - type: marking
   id: HandProstheticLeftMoth
