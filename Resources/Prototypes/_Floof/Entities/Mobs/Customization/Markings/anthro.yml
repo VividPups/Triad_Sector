@@ -627,7 +627,7 @@
 #  id: SnoutFBug
 #  bodyPart: Snout
 #  markingCategory: Snout
-#  colorLinks:
+#  #colorLinks #Triad we dont have color links:
 #    snout_fbug_FRONT_primary: snout_fbug_primary
 #  sprites:
 #  - sprite: _Floof/Mobs/Customization/skyratsnouts.rsi

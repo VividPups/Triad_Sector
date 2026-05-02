@@ -34,7 +34,7 @@
 #  layering:
 #    tail_oversuit: TailOversuit
 #    tail_behind: TailBehind
-#  colorLinks:
+#  #colorLinks #Triad we dont have color links:
 #    tail_oversuit: tail_behind
 #  sprites:
 #  - sprite: Floof/Mobs/Customization/debug.rsi

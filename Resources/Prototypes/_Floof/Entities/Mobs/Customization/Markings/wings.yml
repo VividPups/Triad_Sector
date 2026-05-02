@@ -1,8 +1,10 @@
+# Inverted restrictions remove at this time  Triad
+
 - type: marking
   id: WingsFly
   bodyPart: Wings
   markingCategory: Wings
-  invertedRestrictions: true
+  #invertedRestrictions: true
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
       state: fly
@@ -11,7 +13,7 @@
   id: WingsRobotic
   bodyPart: Wings
   markingCategory: Wings
-  invertedRestrictions: true
+  #invertedRestrictions: true
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
       state: robotic
@@ -20,7 +22,7 @@
   id: WingsSkeleton
   bodyPart: Wings
   markingCategory: Wings
-  invertedRestrictions: true
+ # invertedRestrictions: true
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
       state: skeleton
@@ -29,19 +31,21 @@
   id: WingsHarpy
   bodyPart: Wings
   markingCategory: Wings
-  invertedRestrictions: true
+  #invertedRestrictions: true
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
       state: harpy
 
-- type: marking
-  id: WingsHarpyBionic
-  bodyPart: Wings
-  markingCategory: Wings
-  invertedRestrictions: true
-  sprites:
-    - sprite: _Floof/Mobs/Customization/wings64-32.rsi
-      state: bionic_wings_tone_1
-    - sprite: _Floof/Mobs/Customization/wings64-32.rsi
-      state: bionic_wings_tone_2
-      shader: unshaded
+# Remove as it is a Dulp ID
+#- type: marking
+#  id: WingsHarpyBionic
+#  bodyPart: Wings
+#  markingCategory: Wings
+# # invertedRestrictions: true
+#  sprites:
+#    - sprite: _Floof/Mobs/Customization/wings64-32.rsi
+#      state: bionic_wings_tone_1
+#    - sprite: _Floof/Mobs/Customization/wings64-32.rsi
+#      state: bionic_wings_tone_2
+#      shader: unshaded
+#
