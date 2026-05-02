@@ -20,7 +20,7 @@
 #Left Leg
 - type: marking
   id: VulpPointsFadeLegL
-  markingCategory: LLeg
+  markingCategory: Legs #triad
   bodyPart: LLeg
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -28,7 +28,7 @@
 
 - type: marking
   id: VulpPointsSharpLegL
-  markingCategory: LLeg
+  markingCategory: Legs # Triad
   bodyPart: LLeg
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -36,7 +36,7 @@
 
 - type: marking
   id: VulpPointsCrestLegL
-  markingCategory: LLeg
+  markingCategory: Legs #Traid
   bodyPart: LLeg
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -44,7 +44,7 @@
 #Right Leg
 - type: marking
   id: VulpPointsFadeLegR
-  markingCategory: RLeg
+  markingCategory: Legs #Triad
   bodyPart: RLeg
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -52,7 +52,7 @@
 
 - type: marking
   id: VulpPointsSharpLegR
-  markingCategory: RLeg
+  markingCategory: Legs #Triad
   bodyPart: RLeg
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -60,7 +60,7 @@
 
 - type: marking
   id: VulpPointsCrestLegR
-  markingCategory: RLeg
+  markingCategory: Legs #Triad
   bodyPart: RLeg
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -68,7 +68,7 @@
 #Left Arm
 - type: marking
   id: VulpPointsFadeArmL
-  markingCategory: LArm
+  markingCategory: Arms #Triad
   bodyPart: LArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -76,7 +76,7 @@
 
 - type: marking
   id: VulpPointsSharpArmL
-  markingCategory: LArm
+  markingCategory: Arm #Triad
   bodyPart: LArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -84,7 +84,7 @@
 
 - type: marking
   id: VulpPointsCrestArmL
-  markingCategory: LArm
+  markingCategory: LArm #Triad
   bodyPart: LArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -92,7 +92,7 @@
 #Right Arm
 - type: marking
   id: VulpPointsFadeArmR
-  markingCategory: RArm
+  markingCategory: Arms #Triad
   bodyPart: RArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -100,7 +100,7 @@
 
 - type: marking
   id: VulpPointsSharpArmR
-  markingCategory: RArm
+  markingCategory: Arms #Triad
   bodyPart: RArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -108,7 +108,7 @@
 
 - type: marking
   id: VulpPointsCrestArmR
-  markingCategory: RArm
+  markingCategory: Arm #Triad
   bodyPart: RArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
