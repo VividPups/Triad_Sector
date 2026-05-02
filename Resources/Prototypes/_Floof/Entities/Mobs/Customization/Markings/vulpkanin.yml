@@ -179,8 +179,8 @@
     vulp_wag_BACK: TailBehind
     vulp_wag-fade_BACK: TailBehind
   #colorLinks #Triad we dont have color links:
-    vulp_wag_BACK: vulp_wag
-    vulp_wag-fade_BACK: vulp_wag-fade
+    #vulp_wag_BACK: vulp_wag
+    #vulp_wag-fade_BACK: vulp_wag-fade
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag
@@ -201,8 +201,8 @@
     vulp_BACK: TailBehind
     tip_BACK: TailBehind
   #colorLinks #Triad we dont have color links:
-    vulp_BACK: vulp
-    vulp-tip_BACK: vulp-tip
+    #vulp_BACK: vulp
+    #vulp-tip_BACK: vulp-tip
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp
@@ -223,8 +223,8 @@
     vulp_wag_BACK: TailBehind
     vulp_wag-tip_BACK: TailBehind
   #colorLinks #Triad we dont have color links:
-    vulp_wag_BACK: vulp_wag
-    vulp_wag-tip_BACK: vulp_wag-tip
+    #vulp_wag_BACK: vulp_wag
+    #vulp_wag-tip_BACK: vulp_wag-tip
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag
@@ -245,8 +245,8 @@
     vulp_alt_BACK: TailBehind
     vulp_alt-fade_BACK: TailBehind
   #colorLinks #Triad we dont have color links:
-    vulp_alt_BACK: vulp_alt
-    vulp_alt-fade_BACK: vulp_alt-fade
+    #vulp_alt_BACK: vulp_alt
+    #vulp_alt-fade_BACK: vulp_alt-fade
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_alt
@@ -267,8 +267,8 @@
     vulp_alt_BACK: TailBehind
     vulp_alt-tip_BACK: TailBehind
   #colorLinks #Triad we dont have color links:
-    vulp_alt_BACK: vulp_alt
-    vulp_alt-tip_BACK: vulp_alt-tip
+    #vulp_alt_BACK: vulp_alt
+    #vulp_alt-tip_BACK: vulp_alt-tip
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_alt
