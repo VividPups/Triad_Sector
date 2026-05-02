@@ -17,42 +17,6 @@
   - sprite: _Floof/Mobs/Customization/Reptilian/crest_large.rsi
     state: secondary
 
-- type: marking
-  id: SnoutEasternDNW
-  bodyPart: Snout
-  markingCategory: Snout
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
-      state: easterndnw_primary
-    - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
-      state: easterndnw_secondary
-
-- type: marking
-  id: SnoutEasternDW
-  bodyPart: Snout
-  markingCategory: Snout
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
-      state: easterndw_primary
-    - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
-      state: easterndnw_secondary
-
-- type: marking
-  id: SnoutMagusSkull
-  bodyPart: Snout
-  markingCategory: Snout
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
-      state: extra_magus
-
-- type: marking
-  id: SnoutBirdSkull
-  bodyPart: Snout
-  markingCategory: Snout
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
-      state: skullbird
-
 # Triad has their own
 
 #- type: marking
