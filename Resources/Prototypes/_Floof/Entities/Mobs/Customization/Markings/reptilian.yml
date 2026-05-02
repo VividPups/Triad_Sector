@@ -1,12 +1,3 @@
-
-- type: marking
-  id: LizardFloofNeckfull
-  bodyPart: HeadSide
-  markingCategory: HeadSide
-  sprites:
-  - sprite: Mobs/Customization/reptilian_parts.rsi
-    state: floof_neckfull
-
 - type: marking
   id: LizardCrestLargeTop
   bodyPart: HeadTop
