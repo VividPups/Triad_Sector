@@ -84,7 +84,7 @@
 
 - type: marking
   id: VulpPointsCrestArmL
-  markingCategory: LArm #Triad
+  markingCategory: Arms #Triad
   bodyPart: LArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -132,7 +132,7 @@
 #Right Foot
 - type: marking
   id: VulpPointsFeetRight
-  markingCategory: RFoot
+  markingCategory: Legs
   bodyPart: RFoot
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -140,7 +140,7 @@
 #Left Foot
 - type: marking
   id: VulpPointsFeetLeft
-  markingCategory: LFoot
+  markingCategory: Legs
   bodyPart: LFoot
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
