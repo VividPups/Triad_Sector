@@ -12,7 +12,7 @@
   bodyPart: Snout
   markingCategory: Snout
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: vulpine
     - sprite: _Floof/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: vulpine-lines-white
@@ -284,9 +284,9 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag-fade
 
 - type: marking
@@ -294,9 +294,9 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag-tip
 
 - type: marking
@@ -304,7 +304,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: bushfluff_wag
 
 - type: marking
@@ -312,7 +312,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: coyote_wag
 
 - type: marking
@@ -320,7 +320,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: corgi
 
 - type: marking
@@ -328,7 +328,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: corgi_wag
 
 - type: marking
@@ -336,7 +336,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: dalmatian
 
 - type: marking
@@ -344,5 +344,5 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: DeltaV/Mobs/Customization/Vulpkanin/tail_markings.rsi
+    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: dalmatian_wag
