@@ -157,8 +157,8 @@
     vulp_BACK: TailBehind
     vulp-fade_BACK: TailBehind
   #colorLinks #Triad we dont have color links:
-    vulp_BACK: vulp
-    vulp-fade_BACK: vulp-fade
+    #vulp_BACK: vulp
+    #vulp-fade_BACK: vulp-fade
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp
