@@ -108,7 +108,7 @@
 
 - type: marking
   id: VulpPointsCrestArmR
-  markingCategory: Arm #Triad
+  markingCategory: Arms #Triad
   bodyPart: RArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
