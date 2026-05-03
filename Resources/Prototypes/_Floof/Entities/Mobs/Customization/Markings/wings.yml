@@ -1,41 +1,5 @@
 # Inverted restrictions remove at this time  Triad
 
-- type: marking
-  id: WingsFly
-  bodyPart: Wings
-  markingCategory: Wings
-  #invertedRestrictions: true
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
-      state: fly
-
-- type: marking
-  id: WingsRobotic
-  bodyPart: Wings
-  markingCategory: Wings
-  #invertedRestrictions: true
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
-      state: robotic
-
-- type: marking
-  id: WingsSkeleton
-  bodyPart: Wings
-  markingCategory: Wings
- # invertedRestrictions: true
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
-      state: skeleton
-
-- type: marking
-  id: WingsHarpy
-  bodyPart: Wings
-  markingCategory: Wings
-  #invertedRestrictions: true
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
-      state: harpy
-
 # Remove as it is a Dulp ID
 #- type: marking
 #  id: WingsHarpyBionic
