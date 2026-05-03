@@ -47,19 +47,19 @@
       required: true
       defaultMarkings: [ VulpTail ]
     Head:
-      points: 3
+      points: 1
       required: false
     Legs:
-      points: 3 # Triad
+      points: 2 # Triad
       required: false
     Arms:
-      points: 3 # Triad
+      points: 2 # Triad
       required: false
     Snout:
       points: 1
       required: false
     HeadTop:
-      points: 2 # Triad
+      points: 1 # Triad
       required: true
       defaultMarkings: [ VulpEar ]
 
