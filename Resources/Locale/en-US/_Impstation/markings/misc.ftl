@@ -224,3 +224,10 @@ marking-VoxLFootScales = Default Left Foot [DO NOT USE]
 marking-VoxLLegScales = Default Left Leg [DO NOT USE]
 marking-VoxRFootScales = Default Right Foot [DO NOT USE]
 marking-VoxRLegScales = Default Right Leg [DO NOT USE]
+
+# chitinid
+marking-ChitinidBeetleHorn1 = Beetle Horn (Pronged)
+marking-ChitinidBeetleHorn1-chitinidbeetlehorn1 = Beetle Horn (Lance)
+marking-ChitinidBeetleHorn2 = Beetle Horn (Lance)
+marking-ChitinidBeetleHorn2-chitinidbeetlehorn2 = Beetle Horn (Pronged)
+

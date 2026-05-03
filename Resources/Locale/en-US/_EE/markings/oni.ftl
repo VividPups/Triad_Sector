@@ -174,3 +174,7 @@ marking-OniHornDoubleCurvedOutwards3Tone = Double Curved Outwards (Three Tone)
 marking-OniHornDoubleCurvedOutwards3Tone-double_curved_outwards_3tone_1 = Bottom Third
 marking-OniHornDoubleCurvedOutwards3Tone-double_curved_outwards_3tone_2 = Middle Third
 marking-OniHornDoubleCurvedOutwards3Tone-double_curved_outwards_3tone_3 = Top Third
+
+# Traid added
+marking-OniTwoToedFeet-two_toes= Two-Toed Feet
+marking-OniTwoToedFeet= Two-Toed Feet
