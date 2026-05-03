@@ -116,7 +116,7 @@
 #Right Hand
 - type: marking
   id: VulpPointsHandsRight
-  markingCategory: RHand
+  markingCategory: Arms
   bodyPart: RHand
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -124,7 +124,7 @@
 #Left Hand
 - type: marking
   id: VulpPointsHandsLeft
-  markingCategory: LHand
+  markingCategory: Arms
   bodyPart: LHand
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
@@ -300,14 +300,6 @@
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: corgi_wag
-
-- type: marking
-  id: VulpTailDalmatian
-  bodyPart: Tail
-  markingCategory: Tail
-  sprites:
-    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
-      state: dalmatian
 
 - type: marking
   id: VulpTailDalmatianAnimated
