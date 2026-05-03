@@ -294,14 +294,6 @@
       state: coyote_wag
 
 - type: marking
-  id: VulpTailCorgi
-  bodyPart: Tail
-  markingCategory: Tail
-  sprites:
-    - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
-      state: corgi
-
-- type: marking
   id: VulpTailCorgiAnimated
   bodyPart: Tail
   markingCategory: Tail
