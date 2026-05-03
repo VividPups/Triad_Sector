@@ -48,7 +48,7 @@
 - type: marking
   id: SpeciesAdaptorVulpkaninLHand
   bodyPart: LHand
-  markingCategory: Hands #Triad
+  markingCategory: Arms #Triad
   sprites:
   - sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi
     state: l_hand
@@ -64,7 +64,7 @@
 - type: marking
   id: SpeciesAdaptorVulpkaninRHand
   bodyPart: RHand
-  markingCategory: Hands #Triad
+  markingCategory: Arms #Triad
   sprites:
     - sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi
       state: r_hand
@@ -145,7 +145,7 @@
 - type: marking
   id: SpeciesAdaptorRodentiaLHand
   bodyPart: LHand
-  markingCategory: Hands #Triad
+  markingCategory: Arms #Triad
   sprites:
   - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
     state: l_hand
@@ -161,7 +161,7 @@
 - type: marking
   id: SpeciesAdaptorRodentiaRHand
   bodyPart: RHand
-  markingCategory: Hands #Triad
+  markingCategory: Arms #Triad
   sprites:
     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
       state: r_hand
@@ -259,7 +259,7 @@
 - type: marking
   id: SpeciesAdaptorReptilianLHand
   bodyPart: LHand
-  markingCategory: Hands #Triad
+  markingCategory: Arms #Triad
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: l_hand
@@ -275,7 +275,7 @@
 - type: marking
   id: SpeciesAdaptorReptilianRHand
   bodyPart: RHand
-  markingCategory: Hands #Triad
+  markingCategory: Arms #Triad
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: r_hand
