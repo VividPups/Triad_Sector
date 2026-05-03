@@ -76,7 +76,7 @@
 
 - type: marking
   id: VulpPointsSharpArmL
-  markingCategory: Arm #Triad
+  markingCategory: Arms #Triad
   bodyPart: LArm
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
