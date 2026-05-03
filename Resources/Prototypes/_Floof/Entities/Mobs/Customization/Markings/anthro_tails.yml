@@ -691,7 +691,8 @@
   id: TailRabbitAlt
   bodyPart: Tail
   markingCategory: Tail
-    - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+  sprites:
+  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_rabbit_alt_FRONT_secondary
 
 - type: marking
