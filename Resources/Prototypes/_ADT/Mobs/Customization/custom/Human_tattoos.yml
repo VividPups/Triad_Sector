@@ -25,14 +25,14 @@
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: tattoo_churchdomes
 
-#- type: marking  # Triad it is actually nothing
-#  id: HumanTattooStPatriotism
-#  bodyPart: Chest
-#  markingCategory: Chest
-#  speciesRestriction: [Human, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Felinid, Arachne, Moth, Vulpkanin]
-#  sprites:
-#  - sprite: _ADT/Mobs/Customization/Human/custom.rsi
-#    state: tattoo_elysium_patriotism
+- type: marking
+  id: HumanTattooElysiumPatriotism
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Felinid, Arachne, Moth, Vulpkanin]
+  sprites:
+  - sprite: _ADT/Mobs/Customization/Human/custom.rsi
+    state: tattoo_elysium_patriotism
 
 - type: marking
   id: HumanTattooFullskelet
@@ -178,14 +178,14 @@
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: tattoo_skull_face
 
-#- type: marking
-#  id: HumanTattooSymbolElysium
-#  bodyPart: Chest
-#  markingCategory: Chest
-#  speciesRestriction: [Human, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Felinid, Arachne, Moth, Vulpkanin]
-#  sprites:
-#  - sprite: _ADT/Mobs/Customization/Human/custom.rsi
-#    state: tattoo_symbol_elysium
+- type: marking
+  id: HumanTattooSymbolElysium
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Felinid, Arachne, Moth, Vulpkanin]
+  sprites:
+  - sprite: _ADT/Mobs/Customization/Human/custom.rsi
+    state: tattoo_symbol_elysium
 
 - type: marking
   id: HumanTattooNarsi
