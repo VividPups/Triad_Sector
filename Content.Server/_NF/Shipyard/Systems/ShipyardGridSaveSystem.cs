@@ -1,11 +1,7 @@
 using System.IO;
 using System.Threading.Tasks;
-using Content.Server.Atmos.Piping.Components;
-using Content.Server.Chemistry.Components;
 using Content.Server.Construction.Components;
 using Content.Server.Spreader;
-using Content.Server.Power.Components;
-using Content.Server.Power.EntitySystems;
 using Content.Server._HL.Shipyard; // HardLight
 using Content.Shared._Common.Consent; // HardLight
 using Content.Shared._HL.Shipyard; // HardLight
@@ -13,12 +9,10 @@ using Content.Shared._NF.Shipyard.Components;
 using Content.Shared._NF.Shipyard.Events;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
-using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.DeviceLinking;
 using Content.Shared.DeviceLinking.Components;
 using Content.Shared.Mind.Components; // HardLight
-using Content.Shared.Shuttles.Save; // For SendShipSaveDataClientMessage
-using Content.Shared.VendingMachines;
+using Content.Shared._NF.Shuttles.Save; // For SendShipSaveDataClientMessage
 using Content.Shared.Wall; // WallMountComponent for preserving wall-mounted fixtures
 using Robust.Server.Player;
 using Robust.Shared.Containers;
@@ -40,6 +34,8 @@ using Content.Shared._Triad.Shipyard;
 using System.Linq;
 using Content.Shared.Containers;
 using Content.Shared.Doors.Components;
+using Content.Shared._Mono.ShipRepair.Components;
+using Robust.Shared.Collections;
 
 namespace Content.Server._NF.Shipyard.Systems;
 
@@ -58,19 +54,21 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedDeviceLinkSystem _deviceLink = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!; // HardLight
+    [Dependency] private readonly SharedTransformSystem _transform = default!; // Triad
 
     public List<ShipSaveLimitsPrototype> ShipSaveEntityLimits { get; private set; } = new();
 
     private ISawmill _sawmill = default!;
     private MapLoaderSystem _mapLoader = default!;
 
-    private HashSet<Entity<TransformComponent>> _shipSaveEntityList = new();
+    private HashSet<Entity<SpawnOnShipLoadComponent>> _spawnOnShipLoadEntities = new();
     private HashSet<Entity<ShipSaveLimitComponent>> _limitedEntitiesList = new();
 
     private EntityQuery<MapGridComponent> _gridQuery;
     private EntityQuery<ContainerManagerComponent> _containerManagerQuery;
     private EntityQuery<HLPersistOnShipSaveComponent> _persistOnSaveQuery;
     private EntityQuery<TransformComponent> _transformQuery;
+
 
     public override void Initialize()
     {
@@ -95,7 +93,7 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
     /// </summary>
     public bool TrySaveShip(EntityUid grid, EntityUid deedUid, ICommonSession playerSession)
     {
-        if (!_entityManager.TryGetComponent<ShuttleDeedComponent>(deedUid, out var deed))
+        if (!TryComp<ShuttleDeedComponent>(deedUid, out var deed))
         {
             _sawmill.Warning($"Player {playerSession.Name} tried to save ship with invalid deed UID: {deedUid}");
             return false;
@@ -123,7 +121,6 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
         }
         else
         {
-            _sawmill.Error($"Failed to save ship {deed.ShuttleName}");
             return false;
         }
 
@@ -149,6 +146,42 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
         foreach (var deedEntity in deedsToRemove)
         {
             RemComp<ShuttleDeedComponent>(deedEntity);
+        }
+    }
+
+    /// <summary>
+    /// Goes through a grid and checks for any entities with a SpawnOnShipLoadComponent.
+    /// </summary>
+    public void CreateSpawnOnShipLoadEntities(EntityUid gridUid)
+    {
+        if (!_gridQuery.HasComp(gridUid))
+            return;
+
+        var toDelete = new HashSet<EntityUid>();
+
+        _spawnOnShipLoadEntities.Clear();
+
+        // Get the entities on the grid with the ship save limit comp
+        var gridTransform = _transformQuery.GetComponent(gridUid);
+        var worldAABB = _lookup.GetWorldAABB(gridUid, gridTransform);
+        _lookup.GetEntitiesIntersecting(gridTransform.MapID, worldAABB, _spawnOnShipLoadEntities);
+
+        foreach ((var ent, var comp) in _spawnOnShipLoadEntities)
+        {
+            if (ent == gridUid)
+                continue;
+
+            var position = _transform.GetMoverCoordinates(ent);
+            var newEntity = Spawn(comp.Spawn, position);
+            _transform.AttachToGridOrMap(newEntity);
+
+            if (comp.DeleteSelfAfterSpawn)
+                toDelete.Add(ent);
+        }
+
+        foreach (var uid in toDelete)
+        {
+            QueueDel(uid);
         }
     }
 
@@ -234,14 +267,8 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
             // Triad: remove any edge spreaders, we cannot save these
             RemoveEdgeSpreaderComponentComponentsOnGrid(gridUid);
 
-            // HardLight: Remove components that fail serialization (e.g., player state) from entities on the grid.
-            RemoveSerializationBlockingComponentsOnGrid(gridUid);
-
-            // Triad: Removing all EdgeSpreaderComponent
-            RemoveEdgeSpreaderComponentComponentsOnGrid(gridUid);
-
-            // Triad: Remove all SavingContrabandComponent which some are illegal to own or possesion and others are causing problems with ship saving
-            RemoveSavingContrabandComponentComponentsOnGrid(gridUid);
+            // Remove repair data, it is re-added on load
+            RemComp<ShipRepairDataComponent>(gridUid);
 
             //_sawmill.Info($"Serializing ship grid {gridUid} as '{shipName}' after transient purge using direct serialization");
 
@@ -294,60 +321,12 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
         }
     }
 
-    /// <summary>
-    /// HardLight start: Utility method to write a MappingDataNode to a YAML string using YamlDotNet, without touching disk.
-    /// </summary>
-    private void RemoveSerializationBlockingComponentsOnGrid(EntityUid gridUid)
-    {
-        var toRemove = new HashSet<EntityUid>();
-
-        var mindQuery = _entityManager.EntityQueryEnumerator<MindContainerComponent, TransformComponent>();
-        while (mindQuery.MoveNext(out var uid, out var _, out var xform))
-        {
-            if (xform.GridUid != gridUid)
-                continue;
-            toRemove.Add(uid);
-        }
-
-        var consentQuery = _entityManager.EntityQueryEnumerator<ConsentComponent, TransformComponent>();
-        while (consentQuery.MoveNext(out var uid, out var _, out var xform))
-        {
-            if (xform.GridUid != gridUid)
-                continue;
-            toRemove.Add(uid);
-        }
-
-        foreach (var uid in toRemove)
-        {
-            RemComp<MindContainerComponent>(uid);
-            RemComp<ConsentComponent>(uid);
-        }
-    }
-
     private void RemoveEdgeSpreaderComponentComponentsOnGrid(EntityUid gridUid)
     {
         var toRemove = new HashSet<EntityUid>();
 
         var edgeSpreader = _entityManager.EntityQueryEnumerator<EdgeSpreaderComponent, TransformComponent>();
         while (edgeSpreader.MoveNext(out var uid, out var _, out var xform))
-        {
-            if (xform.GridUid != gridUid)
-                continue;
-            toRemove.Add(uid);
-        }
-
-        foreach (var uid in toRemove)
-        {
-            QueueDel(uid);
-        }
-    }
-
-    private void RemoveSavingContrabandComponentComponentsOnGrid(EntityUid gridUid)
-    {
-        var toRemove = new HashSet<EntityUid>();
-
-        var savingContraband = _entityManager.EntityQueryEnumerator<SavingContrabandComponent, TransformComponent>();
-        while (savingContraband.MoveNext(out var uid, out var _, out var xform))
         {
             if (xform.GridUid != gridUid)
                 continue;
@@ -412,44 +391,40 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
     /// </summary>
     private void PurgeInvalidEntities(EntityUid gridUid)
     {
-        if (!_gridQuery.TryComp(gridUid, out var grid))
+        if (!_gridQuery.HasComp(gridUid))
+            return;
+
+        if (!_transformQuery.TryComp(gridUid, out var gridTransform))
             return;
 
         var entitesToDelete = new List<EntityUid>();
-        var processed = new HashSet<EntityUid>();
 
-        _shipSaveEntityList.Clear();
+        var toProcess = new ValueList<EntityUid>();
+        GetAllEntitiesOnGrid(gridTransform, ref toProcess);
 
-        // Get the entities on the grid with the ship save limit comp
-        var gridTransform = _transformQuery.GetComponent(gridUid);
-        var worldAABB = _lookup.GetWorldAABB(gridUid, gridTransform);
-        _lookup.GetEntitiesIntersecting(gridTransform.MapID, worldAABB, _shipSaveEntityList);
-
-        foreach ((var ent, var xform) in _shipSaveEntityList)
+        void ProcessEntityForDeletion(EntityUid uid)
         {
-            if (ent == gridUid)
-                continue;
-
-            if (!processed.Add(ent))
-                continue;
-
-            if (IsInvalidEntity(ent))
+            if (IsInvalidEntity(uid))
             {
-                entitesToDelete.Add(ent);
-                continue;
+                entitesToDelete.Add(uid);
+                return;
             }
 
-            if (_containerManagerQuery.TryComp(ent, out var manager))
+            if (_containerManagerQuery.TryComp(uid, out var manager))
             {
                 foreach (var container in manager.Containers.Values)
                 {
                     foreach (var containedEntity in container.ContainedEntities)
                     {
-                        if (processed.Add(containedEntity) && IsInvalidEntity(containedEntity))
-                            entitesToDelete.Add(containedEntity);
+                        ProcessEntityForDeletion(containedEntity);
                     }
                 }
             }
+        }
+
+        foreach (var uid in toProcess)
+        {
+            ProcessEntityForDeletion(uid);
         }
 
         DeleteEntityList(entitesToDelete, "ship save sanitization");
@@ -465,6 +440,10 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
         // Skip if terminating
         if (_entityManager.GetComponent<MetaDataComponent>(uid).EntityLifeStage >= EntityLifeStage.Terminating)
             return false;
+        if (HasComp<ConsentComponent>(uid) || HasComp<MindContainerComponent>(uid))
+            return true; // do not save things with minds
+        if (HasComp<SavingContrabandComponent>(uid))
+            return true; // no contra
         if (_persistOnSaveQuery.HasComp(uid))
             return false; // preserve stash root outright
         if (_gridQuery.HasComp(uid))
@@ -481,7 +460,7 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
         // Preserve solutions
         if (HasComp<ContainedSolutionComponent>(uid) || HasComp<SolutionComponent>(uid))
             return false;
-        // Delete unanchored entities
+        // Save anchored entities
         if (_transformQuery.TryComp(uid, out var xform) && xform.Anchored)
             return false;
 
@@ -543,6 +522,15 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
             {
                 _sawmill.Warning($"Failed deleting {category} entity {ent}: {ex.Message}");
             }
+        }
+    }
+
+    public static void GetAllEntitiesOnGrid(TransformComponent xform, ref ValueList<EntityUid> reference)
+    {
+        var childEnumerator = xform.ChildEnumerator;
+        while (childEnumerator.MoveNext(out var child))
+        {
+            reference.Add(child);
         }
     }
 

@@ -196,7 +196,7 @@
       color: red
   - type: RandomSpawner
     prototypes:
-    - TechDiskBluespaceBags
+    # - TechDiskBluespaceBags # Triad : Remove regular BoH tech
     - TechDiskTranslationPreFracture
     chance: 0.95
     offset: 0.0
