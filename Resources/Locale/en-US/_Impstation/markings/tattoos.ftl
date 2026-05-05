@@ -1,5 +1,5 @@
-marking-TattooNanotrasenChest-tattoo_nanotrasen_chest = Chest Tattoo (Nanotrasen)
-marking-TattooNanotrasenChest = Chest Tattoo (Nanotrasen)
+# marking-TattooNanotrasenChest-tattoo_nanotrasen_chest = Chest Tattoo (Nanotrasen) # Triad change
+# marking-TattooNanotrasenChest = Chest Tattoo (Nanotrasen) # Triad change
 
 marking-ArmDollJointsTattooLeft-l_arm_doll = Doll Joints Arm Tattoo (Left)
 marking-ArmDollJointsTattooLeft = Doll Joints Arm Tattoo (Left)
