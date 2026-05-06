@@ -37,18 +37,19 @@ marking-SpeciesAdaptorHumanLFoot           = Base Sprite - Human Left Foot
 marking-SpeciesAdaptorHumanRLeg            = Base Sprite - Human Right Leg
 marking-SpeciesAdaptorHumanRFoot           = Base Sprite - Human Right Foot
 
-marking-SpeciesAdaptorFeroxiHeadMale       = Base Sprite - Feroxi Head (Male)
-marking-SpeciesAdaptorFeroxiHeadFemale     = Base Sprite - Feroxi Head (Female)
-marking-SpeciesAdaptorFeroxiTorsoMale      = Base Sprite - Feroxi Chest (Female)
-marking-SpeciesAdaptorFeroxiTorsoFemale    = Base Sprite - Feroxi Chest (Female)
-marking-SpeciesAdaptorFeroxiLArm           = Base Sprite - Feroxi Left Arm
-marking-SpeciesAdaptorFeroxiLHand          = Base Sprite - Feroxi Left Hand
-marking-SpeciesAdaptorFeroxiRArm           = Base Sprite - Feroxi Right Arm
-marking-SpeciesAdaptorFeroxiRHand          = Base Sprite - Feroxi Right Hand
-marking-SpeciesAdaptorFeroxiLLeg           = Base Sprite - Feroxi Left Leg
-marking-SpeciesAdaptorFeroxiLFoot          = Base Sprite - Feroxi Left Foot
-marking-SpeciesAdaptorFeroxiRLeg           = Base Sprite - Feroxi Right Leg
-marking-SpeciesAdaptorFeroxiRFoot          = Base Sprite - Feroxi Right Foot
+# Triad change, there is something wrong with the Feroxi markings
+# marking-SpeciesAdaptorFeroxiHeadMale       = Base Sprite - Feroxi Head (Male)
+# marking-SpeciesAdaptorFeroxiHeadFemale     = Base Sprite - Feroxi Head (Female)
+# marking-SpeciesAdaptorFeroxiTorsoMale      = Base Sprite - Feroxi Chest (Female)
+# marking-SpeciesAdaptorFeroxiTorsoFemale    = Base Sprite - Feroxi Chest (Female)
+# marking-SpeciesAdaptorFeroxiLArm           = Base Sprite - Feroxi Left Arm
+# marking-SpeciesAdaptorFeroxiLHand          = Base Sprite - Feroxi Left Hand
+# marking-SpeciesAdaptorFeroxiRArm           = Base Sprite - Feroxi Right Arm
+# marking-SpeciesAdaptorFeroxiRHand          = Base Sprite - Feroxi Right Hand
+# marking-SpeciesAdaptorFeroxiLLeg           = Base Sprite - Feroxi Left Leg
+# marking-SpeciesAdaptorFeroxiLFoot          = Base Sprite - Feroxi Left Foot
+# marking-SpeciesAdaptorFeroxiRLeg           = Base Sprite - Feroxi Right Leg
+# marking-SpeciesAdaptorFeroxiRFoot          = Base Sprite - Feroxi Right Foot
 
 marking-SpeciesAdaptorReptilianHeadMale    = Base Sprite - Reptilian Head (Male)
 marking-SpeciesAdaptorReptilianHeadFemale  = Base Sprite - Reptilian Head (Female)
