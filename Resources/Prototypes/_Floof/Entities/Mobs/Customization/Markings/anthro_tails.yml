@@ -974,17 +974,17 @@
 #  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
 #    state: m_tail_tailmawwag_BEHIND
 
-- type: marking
-  id: TailThreeCat
-  bodyPart: Tail
-  markingCategory: Tail
-    #colorLinks #Triad we dont have color links:
-  #  m_tail_threecat_BEHIND_primary: m_tail_threecat_FRONT_primary
-  sprites:
-  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_threecat_FRONT_primary
-  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_threecat_BEHIND_primary
+#- type: marking  # Sprites are mess up on layering Traid
+#  id: TailThreeCat
+#  bodyPart: Tail
+#  markingCategory: Tail
+#    #colorLinks #Triad we dont have color links:
+#  #  m_tail_threecat_BEHIND_primary: m_tail_threecat_FRONT_primary
+#  sprites:
+#  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+#    state: m_tail_threecat_FRONT_primary
+#  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+#    state: m_tail_threecat_BEHIND_primary
 
 - type: marking
   id: TailTiger
@@ -1030,18 +1030,18 @@
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_tiger2_BEHIND_tertiary
 
-- type: marking
-  id: TailTwoCat
-  bodyPart: Tail
-  markingCategory: Tail
-    #colorLinks #Triad we dont have color links:
-   # m_tail_twocat_BEHIND_primary: m_tail_twocat_FRONT_primary
-  sprites:
-  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_twocat_FRONT_primary
-  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_twocat_BEHIND_primary
-
+# type: marking  # Layering and sprite is wrong Triad
+# id: TailTwoCat
+# bodyPart: Tail
+# markingCategory: Tail
+#   #colorLinks #Triad we dont have color links:
+#  # m_tail_twocat_BEHIND_primary: m_tail_twocat_FRONT_primary
+# sprites:
+# - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+#   state: m_tail_twocat_FRONT_primary
+# - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+#   state: m_tail_twocat_BEHIND_primary
+#
 - type: marking
   id: TailWah
   bodyPart: Tail
