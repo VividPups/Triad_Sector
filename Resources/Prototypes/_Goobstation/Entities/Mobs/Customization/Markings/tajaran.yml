@@ -20,16 +20,16 @@
   - sprite: _Goobstation/Mobs/Customization/Tajaran/tails.rsi
     state: tail_anim
 
-#- type: marking  # I dont know how to fix  Triad
-#  id: TajaranTailRetroRings
-#  bodyPart: Tail
-#  markingCategory: Tail
-#  speciesRestriction: [Tajaran]
-#  sprites:
-#  - sprite: _Goobstation/Mobs/Customization/Tajaran/tails.rsi
-#    state: tail
-#  - sprite: _Goobstation/Mobs/Customization/Tajaran/tail_markings.rsi
-#    state: tail_rings
+- type: marking  # I dont know how to fix  Triad
+  id: TajaranTailRetroRings
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Tajaran]
+  sprites:
+  - sprite: _Goobstation/Mobs/Customization/Tajaran/tails.rsi
+    state: tail
+  - sprite: _Goobstation/Mobs/Customization/Tajaran/tail_markings.rsi
+    state: tail_rings
 
 #- type: marking  # I dont know how to fix Triad
 #  id: TajaranTailAnimRings
