@@ -64,6 +64,7 @@
       state: lovelox_secondary
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
       state: lovelox_tertiary
+
 # End Floof - M3739 - #1084
 - type: marking
   id: EarsResomi
@@ -211,7 +212,7 @@
 - type: marking
   id: ReptilianTattoSkeletArmL
   bodyPart: LArm
-  markingCategory: LArm
+  markingCategory: Arms # Triad
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
