@@ -27,5 +27,6 @@ marking-EarsLovelox = Lovelox Ears
 marking-EarsResomi = Resomi Ears
 marking-EarsChemlight = ChemLight Ears
 marking-EarsDragonLong = Dragon Long Ears
-# marking-EarsEasternD = Ears 1
 marking-EarsMagus = Magus Ears
+# triad change
+marking-EarsEasternD = Ears (Long pointed back)
