@@ -721,3 +721,12 @@ Entries:
   id: 2209
   time: '2026-05-19T03:30:36.0000000+00:00'
   url: https://github.com/Triad-Sector/Triad_Sector/pull/95
+- author: Minerva
+  changes:
+    - type: Tweak
+      message: >-
+        Water vapor canisters are now on sale at the Trade Mall for 3000
+        credits.
+  id: 2210
+  time: '2026-05-19T03:55:41.0000000+00:00'
+  url: https://github.com/Triad-Sector/Triad_Sector/pull/101
